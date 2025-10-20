@@ -1,7 +1,46 @@
-html {
+html,
+body {
     font-family: Arial, sans-serif;
     color: #ffffff;
-    background-color: #000000;
+    background-color: #06090f;
     margin: 0;
     padding: 0;
+    height: 100%;
+}
+
+.bar-horizon {
+    height: 60px;
+    /* Hauteur de la barre horizontale */
+    width: 100%;
+    background-color: #0043c9;
+    display: flex;
+    align-items: center;
+}
+
+.bar-horizon img {
+    height: 50px;
+    width: 50px;
+    margin-left: 15px;
+    /* Espace à gauche de l'image */
+    border-radius: 15px;
+}
+
+.container {
+    display: flex;
+    height: calc(100% - 60px);
+    /* Hauteur restante après la barre horizontale */
+}
+
+.bar-vertical {
+    width: 80px;
+    /* Largeur de la barre verticale */
+    height: 100%;
+    background-color: #0043c9;
+
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
 }
