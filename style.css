@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
     font-family: Arial, sans-serif;
     color: #ffffff;
     background-color: #06090f;
@@ -9,8 +8,7 @@ body {
 }
 
 .bar-horizon {
-    height: 60px;
-    /* Hauteur de la barre horizontale */
+    height: 100px;
     width: 100%;
     background-color: #0043c9;
     display: flex;
@@ -21,26 +19,28 @@ body {
     height: 50px;
     width: 50px;
     margin-left: 15px;
-    /* Espace à gauche de l'image */
     border-radius: 15px;
 }
 
 .container {
     display: flex;
     height: calc(100% - 60px);
-    /* Hauteur restante après la barre horizontale */
 }
 
 .bar-vertical {
-    width: 80px;
-    /* Largeur de la barre verticale */
+    width: 100px;
     height: 100%;
     background-color: #0043c9;
-
 }
 
 .content {
     flex: 1;
     padding: 20px;
     overflow-y: auto;
+    background-color: #06090f;
+    border-top-left-radius: 30px;
+    margin-top: -30px; /* Remonte pour "entourer" la barre horizontale */
+    margin-left: -30px; /* Décale à gauche pour "entourer" la barre verticale */
+    padding-top: 50px; /* Compense la remontée pour le contenu */
+    padding-left: 50px; /* Compense le décalage pour le contenu */
 }
